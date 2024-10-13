@@ -3,11 +3,11 @@
   <title>Blog</title>
   
   
-  <link href="http://imanautisticbot.github.io/atom.xml" rel="self"/>
+  <link href="http://onetrue-6657.github.io/atom.xml" rel="self"/>
   
-  <link href="http://imanautisticbot.github.io/"/>
+  <link href="http://onetrue-6657.github.io/"/>
   <updated>2024-10-12T21:24:51.997Z</updated>
-  <id>http://imanautisticbot.github.io/</id>
+  <id>http://onetrue-6657.github.io/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>We Are MASSIVE</title>
-    <link href="http://imanautisticbot.github.io/2024/10/12/firstblog/"/>
-    <id>http://imanautisticbot.github.io/2024/10/12/firstblog/</id>
+    <link href="http://onetrue-6657.github.io/2024/10/12/firstblog/"/>
+    <id>http://onetrue-6657.github.io/2024/10/12/firstblog/</id>
     <published>2024-10-12T21:24:25.000Z</published>
     <updated>2024-10-12T21:24:51.997Z</updated>
     
@@ -38,8 +38,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://imanautisticbot.github.io/2024/10/12/hello-world/"/>
-    <id>http://imanautisticbot.github.io/2024/10/12/hello-world/</id>
+    <link href="http://onetrue-6657.github.io/2024/10/12/hello-world/"/>
+    <id>http://onetrue-6657.github.io/2024/10/12/hello-world/</id>
     <published>2024-10-12T21:02:23.874Z</published>
     <updated>2024-10-12T21:02:23.874Z</updated>
     
