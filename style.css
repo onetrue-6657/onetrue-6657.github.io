@@ -1,15 +1,135 @@
-.info {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #f9f9f9; /* Light gray background */
-  border: 1px solid #ddd; /* Light border */
-  border-radius: 5px; /* Rounded corners */
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-.info p {
-  margin: 5px 0; /* Space between paragraphs */
+.profile_name {
+  float: left;
+  padding-left: 2cm;
+  font-size: 40px;
+  font-style: bolder;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
 }
 
-.info strong {
-  color: #4caf50; /* Highlight color for labels */
+#home {
+  background-color: #0eb8e3;
+  padding-bottom: 1cm;
+  margin-left: -1cm;
+  margin-right: -1cm;
+  margin-top: -1cm;
+  padding-top: 2cm;
+  padding-bottom: 2cm;
+  height: 5mm;
+}
+
+.topmenu {
+  color: white;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.topmenu:hover {
+  color: white;
+  background-color: #13979b;
+  text-decoration: underline;
+}
+
+.topdiv {
+  float: right;
+  padding-right: 1cm;
+}
+
+h2 {
+  text-align: justify;
+  font-size: 50px;
+  text-align: center;
+  float: left;
+  color: #0eb8e3;
+  margin: 30px;
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.introduction {
+  text-align: justify;
+  font-size: 30px;
+  text-align: center;
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  animation-duration: 5s;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* #about-me p {
+  font-size: 25px;
+  color: rgb(128, 128, 128);
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 20px;
+  text-align: justify;
+  max-width: 800px;
+} */
+
+p {
+  font-size: 25px;
+  color: rgb(128, 128, 128);
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 20px;
+  text-align: justify;
+  max-width: 800px;
+}
+
+li {
+  font-size: 25px;
+  color: rgb(128, 128, 128);
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 20px;
+  text-align: justify;
+  max-width: 800px;
+}
+
+a {
+  font-size: 25px;
+  color: rgb(16, 137, 236);
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 20px;
+  text-align: justify;
+  max-width: 800px;
+}
+
+.iconbutton {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #0eb8e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+.iconbutton img {
+  margin-bottom: 40%;
+  margin-right: 50%;
+  display: block;
+  cursor: pointer;
+  align-items: center;
 }

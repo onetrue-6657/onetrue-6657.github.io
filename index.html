@@ -4,50 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>6657 Fan Club Personal Website</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Welcome to my personal website!</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#current">Current Progress</a></li>
-          <li><a href="#resources">Clubs and Useful Resources</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-          <li><a href="#link">Links</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav>
+      <div id="home">
+        <div class="profile_name">6657 Fan Club (Developing...)</div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#current">Current Progress</a>
+          <a class="topmenu" href="#clubs">Clubs and Useful Resources</a>
+          <a class="topmenu" href="#contact">Contact Me</a>
+          <a class="topmenu" href="#link">Links</a>
+        </div>
+      </div>
+    </nav>
 
-    <section id="about">
-      <h2>PERSONAL INFORMATION</h2>
-      <div class="info">
-        <p><strong>Name:</strong> Zheng Ni</p>
-        <p><strong>Preferred Name:</strong> [Need your advice!]</p>
-        <p><strong>Location:</strong> Columbus, OH, US</p>
-        <p><strong>From:</strong> Suzhou, Jiangsu, China</p>
+    <section id="about-me" class="container">
+      <div>
+        <h2>ABOUT ME</h2>
+        <div style="clear: both"></div>
         <p>
-          <strong>University:</strong> Class of 2028 at the Ohio State
-          University
-        </p>
-        <p>
-          <strong>Focused Area:</strong> Computer and Information Science
-          (Honors Program, College of Arts and Science)
-        </p>
-        <p>
-          <strong>Interested Areas:</strong> Business Analytics, Cognitive
-          Science, History
-        </p>
-        <p>
-          <strong>High School:</strong> Suzhou High School of Jiangsu Province
+          Hi! I am Zheng Ni (Ni as last name). I am currently studying computer
+          and information science major as a freshman (class of 2028) at the
+          Ohio State University in Columbus, OH, US. I am from Suzhou, Jiangsu,
+          China, where I experienced my high school at Suzhou High School.
+          Besides computer science, I am also interested in business analytics,
+          cognitive science, and history.
         </p>
       </div>
     </section>
 
     <section id="projects">
       <h2>PROJECTS</h2>
+      <div style="clear: both"></div>
       <ul>
         <li>
           <h3>Simple Python Scrawler [2024.10]</h3>
@@ -84,6 +75,7 @@
 
     <section id="current">
       <h2>CURRENT PROGRESS</h2>
+      <div style="clear: both"></div>
       <ul>
         <li>
           <h3>Personal Website Development</h3>
@@ -120,6 +112,7 @@
 
     <section id="clubs">
       <h2>CLUBS AND USEFUL RESOURCES</h2>
+      <div style="clear: both"></div>
       <p>Here are some clubs I am actively participating in.</p>
       <ul>
         <li>
@@ -148,6 +141,7 @@
 
     <section id="contact">
       <h2>CONTACT</h2>
+      <div style="clear: both"></div>
       <p>If you want to contact me, follow the information below:</p>
       <ul>
         <li>
@@ -166,6 +160,7 @@
 
     <section id="link">
       <h2>LINKS</h2>
+      <div style="clear: both"></div>
       <h3><a href="https://github.com/onetrue-6657">Github</a></h3>
 
       <h3><a href="https://www.linkedin.com/in/zheng-6657-ni/">LinkedIn</a></h3>
@@ -174,6 +169,12 @@
         <a href="https://www.instagram.com/onetrue6657inohio/">Instagram</a>
       </h3>
     </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <img src="home.png" style="width: 60px; height: 60px" />
+      </a>
+    </div>
 
     <footer>
       <p>&copy; 2024 Zheng Ni. All Rights Reserved.</p>
