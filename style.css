@@ -1,6 +1,12 @@
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
 }
 
 .profile_name {
@@ -14,7 +20,6 @@ body {
 }
 
 #home {
-  background-color: #0eb8e3;
   padding-bottom: 1cm;
   margin-left: -1cm;
   margin-right: -1cm;
@@ -72,19 +77,9 @@ h2 {
   justify-content: flex-start;
 }
 
-/* #about-me p {
-  font-size: 25px;
-  color: rgb(128, 128, 128);
-  margin-top: 20px;
-  margin-left: 40px;
-  margin-right: 20px;
-  text-align: justify;
-  max-width: 800px;
-} */
-
 p {
-  font-size: 25px;
-  color: rgb(128, 128, 128);
+  font-size: 20px;
+  color: #ffffff;
   margin-top: 20px;
   margin-left: 40px;
   margin-right: 20px;
@@ -93,8 +88,8 @@ p {
 }
 
 li {
-  font-size: 25px;
-  color: rgb(128, 128, 128);
+  font-size: 20px;
+  color: #ffffff;
   margin-top: 20px;
   margin-left: 40px;
   margin-right: 20px;
@@ -103,10 +98,10 @@ li {
 }
 
 a {
-  font-size: 25px;
-  color: rgb(16, 137, 236);
+  font-size: 20px;
+  color: #ffffff;
   margin-top: 20px;
-  margin-left: 40px;
+  margin-left: 20px;
   margin-right: 20px;
   text-align: justify;
   max-width: 800px;
@@ -132,4 +127,72 @@ a {
   display: block;
   cursor: pointer;
   align-items: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-left: 40px;
+}
+
+.skill-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 40px;
+  margin-left: 40px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.skill-box:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.social-links {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column; /* 确保图标竖着排列 */
+  gap: 10px; /* 设置每个图标之间的间距 */
+}
+
+.icon-box {
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
 }
