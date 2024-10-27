@@ -9,14 +9,42 @@ body {
   color: #333;
 }
 
+body {
+  font-style: normal;
+}
+
+h1,
+h2,
+p,
+ul,
+li {
+  font-style: normal;
+}
+
+h2,
+p,
+li,
+a {
+  text-align: flex-start;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+
 .profile_name {
-  float: left;
-  padding-left: 2cm;
-  font-size: 40px;
-  font-style: bolder;
+  padding-left: 3%;
+  font-size: 250%;
+  font-weight: bold;
   color: #ffffff;
   display: flex;
   align-items: center;
+  margin-top: 1.5%;
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 #home {
@@ -27,14 +55,28 @@ body {
   padding-top: 2cm;
   padding-bottom: 2cm;
   height: 5mm;
+  width: 100%;
+}
+
+.topdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+  gap: 20px;
 }
 
 .topmenu {
   color: white;
-  margin: 10px;
-  padding: 20px;
-  font-size: 20px;
+  font-size: 140%;
   text-decoration: none;
+  transition: background-color 0.3s;
+  padding: 10px;
+}
+
+.topmenu a {
+  margin-right: 1.5%;
 }
 
 .topmenu:hover {
@@ -43,21 +85,75 @@ body {
   text-decoration: underline;
 }
 
-.topdiv {
-  float: right;
-  padding-right: 1cm;
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  margin-left: auto;
+  padding: 20px;
+}
+
+.dropdown-menu {
+  display: none; /* 默认隐藏 */
+  position: absolute;
+  left: 0;
+  background-image: url("background.jpg");
+  width: 100%;
+  flex-direction: column;
+  z-index: 10;
+  padding: 10px 0;
+  align-items: center; /* 菜单项居中 */
+}
+
+.dropdown-menu a {
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 150%;
+  border-bottom: 1px solid #0b6c6f; /* 添加分隔线 */
+}
+
+.dropdown-menu a:hover {
+  background-color: #0b6c6f; /* 悬停背景色 */
+}
+
+.dropdown-menu.active {
+  display: flex; /* 仅在激活状态下显示 */
+}
+
+@media (max-width: 960px) {
+  .topmenu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header {
+    background-image: url("background.jpg"); /* 在小屏幕时改变背景色 */
+  }
 }
 
 h2 {
-  text-align: justify;
   font-size: 50px;
-  text-align: center;
+  text-align: justify;
   float: left;
-  color: #0eb8e3;
-  margin: 30px;
-  margin-left: 40px;
+  color: white;
+  margin-left: 4.5%;
   margin-top: 40px;
   margin-bottom: 0px;
+}
+
+@media (max-width: 1600px) {
+  h2 {
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
 }
 
 .introduction {
@@ -74,35 +170,104 @@ h2 {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+#about-me p {
+  font-size: 130%;
+  color: #ffffff;
+  margin-top: 1.25%;
+  margin-left: 5.25%;
+  margin-right: 1.25%;
+  text-align: justify;
+  max-width: 800px;
+}
+
+.about-me-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 13%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-pic {
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+}
+
+@media (min-width: 400px) {
+  .about-me-content {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-me-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-pic {
+    height: auto;
+    max-width: 400px;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .about-me-text {
+    text-align: center;
+  }
 }
 
 p {
-  font-size: 20px;
+  font-size: 100%;
   color: #ffffff;
-  margin-top: 20px;
-  margin-left: 40px;
-  margin-right: 20px;
+  margin-top: 1.25%;
+  margin-left: 3.25%;
+  margin-right: 1.25%;
+  margin-bottom: 1.25%;
   text-align: justify;
   max-width: 800px;
+}
+
+@media (max-width: 1600px) {
+  p {
+    text-align: center;
+  }
+
+  li {
+    text-align: center;
+  }
+
+  a {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
 }
 
 li {
-  font-size: 20px;
+  font-size: 130%;
   color: #ffffff;
-  margin-top: 20px;
-  margin-left: 40px;
-  margin-right: 20px;
+  margin-top: 1.25%;
+  margin-left: 3.25%;
+  margin-right: 1.25%;
   text-align: justify;
   max-width: 800px;
 }
 
-a {
-  font-size: 20px;
+a:not(.topmenu) {
+  font-size: 100%;
   color: #ffffff;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 1.25%;
+  margin-left: 3.25%;
+  margin-right: 1.25%;
   text-align: justify;
   max-width: 800px;
 }
@@ -123,7 +288,6 @@ a {
 
 .iconbutton img {
   margin-bottom: 40%;
-  margin-right: 50%;
   display: block;
   cursor: pointer;
   align-items: center;
@@ -174,8 +338,8 @@ footer {
 
 .icon-container {
   display: flex;
-  flex-direction: column; /* 确保图标竖着排列 */
-  gap: 10px; /* 设置每个图标之间的间距 */
+  flex-direction: column;
+  gap: 10px;
 }
 
 .icon-box {
@@ -195,4 +359,23 @@ footer {
 .icon:hover {
   transform: scale(1.2);
   transition: transform 0.2s ease;
+}
+
+@media (max-width: 960px) {
+  .icon-container {
+    gap: 5px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon-box {
+    padding: 5px;
+  }
+
+  .icon-container {
+    display: none;
+  }
 }
