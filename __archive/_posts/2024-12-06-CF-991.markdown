@@ -1,0 +1,171 @@
+---
+layout: post
+title:  "CodeForces Round 991 (Div 3)"
+date:   2024-12-06 19:27:06 -0500
+categories: jekyll update
+---
+CodeForces Round 991 Division 3
+
+Problem A
+```cpp
+void solve() {
+    std::cin >> n >> m;
+    sum = 0, res = 0;
+    std::string s[n];
+    int len[n], pref[n];
+    for (int i = 0; i < n; i++) {
+        std::cin >> s[i];
+        len[i] = s[i].length();
+    }
+    if (n == 1) {
+        if (len[0] <= m) std::cout << 1 << std::endl;
+        else std::cout << 0 << std::endl;
+        return;
+    }
+    pref[0] = len[0];
+    if (pref[0] <= m) res++;
+    for (int i = 1; i < n; i++) {
+        pref[i] = pref[i - 1] + len[i];
+        if (pref[i] <= m) {
+            res++;
+        } else {
+            break;
+        }
+    }
+    std::cout << res << std::endl;
+}
+```
+
+Problem B
+```cpp
+void solve() {
+    ll a[200020] = {0};
+    ll sum = 0, avg = 0;
+    std::cin >> n;
+    for (int i = 1; i <= n; i++) {
+        std::cin >> a[i];
+        sum += a[i];
+    }
+    if (sum % n != 0) {
+        std::cout << "NO" << std::endl;
+        return;
+    } else {
+        avg = sum / n;
+    }
+    for (int i = 2; i <= n - 1; i++) {
+        if (a[i - 1] < avg) {
+            a[i + 1] -= (avg - a[i - 1]);
+            a[i - 1] = avg;
+        } else {
+            a[i + 1] += (a[i - 1] - avg);
+            a[i - 1] = avg;
+        }
+    }
+
+    // for (int i = 1; i <= n; i++) {
+    //     std::cout << a[i] << " ";
+    // }
+    // std::cout << std::endl;
+
+    for (int i = 1; i <= n; i++) {
+        if (a[i] != avg) {
+            std::cout << "NO" << std::endl;
+            return;
+        }
+    }
+    std::cout << "YES" << std::endl;
+}
+```
+
+Problem C
+```cpp
+void solve() {
+    std::cin >> s;
+    bool res = false;
+    int rem = 0, sum = 0, two = 0, three = 0;
+    for (int i = 0; i < s.length(); i++) {
+        int dgt = s[i] - '0';
+        sum += dgt;
+        if (dgt == 2) two++;
+        if (dgt == 3) three++;
+    }
+
+    rem = (9 - sum % 9) % 9; 
+
+    if (rem == 0) {
+        std::cout << "YES" << std::endl; 
+        return;
+    }
+
+    for (int a = 0; a <= two; a++) {
+        for (int b = 0; b <= three; b++) {
+            int total_increase = 2 * a + 6 * b;
+            if (total_increase % 9 == rem) {
+                res = true;
+                break;
+            }
+        }
+        if (res) break;
+    }
+    // rem = sum % 9;
+    // if (rem == 0) res = true;
+    // rem = 9 - rem;
+    // if (rem == 0) {
+    //     res = true;
+    // } else if (rem == 1) { // 1, 10, 19, 28
+    //     if (two >= 5) res = true;
+    //     if (two >= 2 && three >= 1) res = true;
+    // } else if (rem == 2) { // 2, 11, 20, 29, 38, 47, 56
+    //     if (two >= 1) res = true;
+    // } else if (rem == 3) { // 3, 12, 21
+    //     if (two >= 6) res = true;
+    //     if (three >= 2) res = true;
+    //     if (two >= 3 && three >= 1) res = true;
+    // } else if (rem == 4) { // 4, 13, 22
+    //     if (two >= 2) res = true;
+    // } else if (rem == 5) { // 5, 14, 23, 32
+    //     if (two >= 4 && three >= 1) res = true;
+    //     if (two >= 1 && three >= 2) res = true;
+    // } else if (rem == 6) { // 6, 15, 24, 33
+    //     if (three >= 1) res = true;
+    //     if (two >= 3) res = true;
+    // } else if (rem == 7) { // 7, 16, 25, 34, 43
+    //     if (two >= 2 && three >= 2) res = true;
+    //     if (two >= 5 && three >= 1) res = true;
+    // } else if (rem == 8) { // 8, 17, 26
+    //     if (two >= 4) res = true;
+    //     if (two >= 1 && three >= 1) res = true;
+    // } 
+
+    if (res == true) std::cout << "YES" << std::endl;
+    else std::cout << "NO" << std::endl;
+}
+```
+
+Problem D
+```cpp
+void solve() {
+    std::cin >> s;
+    int a[200020] = {0};
+    for (int i = 1; i <= s.length(); i++) {
+        a[i] = s[i - 1] - '0';
+        // for (int i = 1; i <= s.length(); i++) std::cout << a[i];
+        // std::cout << std::endl;
+    }
+
+    for (int i = 2; i <= s.length(); i++) {
+        int j = i;
+        while (a[j] - 1 > a[j - 1] && j > 1 && a[j] > 0) {
+            int tmp = a[j - 1];
+            a[j - 1] = a[j] - 1;
+            a[j] = tmp;
+            j--;
+        }
+        // for (int i = 1; i <= s.length(); i++) std::cout << a[i];
+        // std::cout << std::endl;
+    }
+
+    for (int i = 1; i <= s.length(); i++) std::cout << a[i];
+    std::cout << std::endl;
+}
+```
