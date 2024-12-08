@@ -1,7 +1,9 @@
 ## 6657 Fan Club
 
-[![Website]][website-url]
-[![Dynamic JSON Badge][discord-shield]][discord-url]
+[My personal website!](https://o-v-o.xyz/)
+
+<!-- [![Website]][website-url]
+[![Dynamic JSON Badge][discord-shield]][discord-url] -->
 
 <!-- [![][github-release-shield]][github-release-link]
 [![][github-release-date-shield]][github-release-link]
@@ -10,9 +12,9 @@
 
 <!-- Gonna add these later :L -->
 
-[website-url]: https://o-v-o.xyz/
+<!-- [website-url]: https://o-v-o.xyz/
 [discord-shield]: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscord.com%2Fapi%2Finvites%2Fcomfyorg%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&logo=discord&logoColor=white&label=Discord&color=green&suffix=%20total
-[discord-url]: https://discord.gg/jBWjw5Hzkr/
+[discord-url]: https://discord.gg/jBWjw5Hzkr/ -->
 
 <!-- [github-release-shield]: https://img.shields.io/github/v/release/comfyanonymous/ComfyUI?style=flat&sort=semver
 [github-release-link]: https://github.com/comfyanonymous/ComfyUI/releases
@@ -21,9 +23,11 @@
 [github-downloads-latest-shield]: https://img.shields.io/github/downloads/comfyanonymous/ComfyUI/latest/total?style=flat&label=downloads%40latest
 [github-downloads-link]: https://github.com/comfyanonymous/ComfyUI/releases -->
 
-## Installation
+## Tutorial
 
-If you're just getting started with Jekyll, you can use this repository as a starting point for your own site. Just [download this project](https://github.com/bencentra/centrarium/archive/master.zip) and add all the files to your project. Add your blog posts to the `posts/` directory, and create your pages with the proper Jekyll front matter (see `posts.html` for an example).
+This website is built based on Ruby, Jekyll, and the theme Centrarium.
+
+If you're just getting started with Jekyll, you can use this repository as a starting point for your own site. Just [download Centrarium](https://github.com/bencentra/centrarium/archive/master.zip) and add all the files to your project. Add your blog posts to the `posts/` directory, and create your pages with the proper Jekyll front matter (see `posts.html` for an example).
 
 If your site already uses Jekyll, follow these steps:
 
@@ -41,13 +45,15 @@ gem install bundler
 bundle install
 ```
 
-## Stackbit Deploy
+You can find information further in the repository of [Centraium](https://github.com/bencentra/centrarium/).
+
+<!-- ## Stackbit Deploy
 
 This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful. 
 
-[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/bencentra/centrarium)
+[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/bencentra/centrarium) -->
 
-## Updating Header and Footer Links
+<!-- ## Updating Header and Footer Links
 
 Links in the header and footer are auto-generated. Links will be made for all files marked `category: page`, that have a title, and have the custom `main_nav` front-matter variable set to `true`. You can modify the rules for link generation in `_layouts/nav_links.html`.
 
@@ -218,13 +224,13 @@ Please follow these steps:
 1. Fork/clone this repository.
 2. Develop (and test!) your changes.
 3. Open a pull request on GitHub. A description and/or screenshot of changes would be appreciated!
-4. I ([Ben Centra](https://github.com/bencentra)) will review and merge the pull request.
+4. I ([Ben Centra](https://github.com/bencentra)) will review and merge the pull request. -->
 
 ## License
 
-MIT. See [LICENSE.MD](https://github.com/bencentra/centrarium/blob/master/LICENSE.md).
+MIT. See [LICENSE.MD](https://github.com/onetrue-6657/onetrue-6657.github.io/LICENSE.md).
 
-[bencentra]: http://bencentra.com
+<!-- [bencentra]: http://bencentra.com
 [bourbon]: http://bourbon.io/
 [neat]: http://neat.bourbon.io/
 [bitters]: http://bitters.bourbon.io/
@@ -237,4 +243,4 @@ MIT. See [LICENSE.MD](https://github.com/bencentra/centrarium/blob/master/LICENS
 [disqus]: https://disqus.com/
 [ga]: http://www.google.com/analytics/
 [archives]: https://github.com/jekyll/jekyll-archives
-[sitemap]: https://github.com/jekyll/jekyll-sitemap
+[sitemap]: https://github.com/jekyll/jekyll-sitemap -->
