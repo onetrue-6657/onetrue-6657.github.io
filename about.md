@@ -17,5 +17,5 @@ Feel free to contact me at any time: [Discord]
 
 Check the source code of this website, powered by Ruby and Jekyll! [Jekyll Source Code]
 
-[Discord]: "https://discord.gg/jBWjw5Hzkr/"
+[Discord]: https://discord.gg/jBWjw5Hzkr/
 [Jekyll Source Code]: https://github.com/onetrue-6657/onetrue-6657.github.io/
