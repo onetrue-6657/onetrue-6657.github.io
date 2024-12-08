@@ -1,173 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-07T19:21:50-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Centrarium</title><subtitle>A simple yet classy theme for your Jekyll website or blog.
-</subtitle><entry><title type="html">CodeForces Round 991 (Div 3)</title><link href="http://localhost:4000/archive/jekyll/update/2024/12/06/CF-991.html" rel="alternate" type="text/html" title="CodeForces Round 991 (Div 3)" /><published>2024-12-06T19:27:06-05:00</published><updated>2024-12-06T19:27:06-05:00</updated><id>http://localhost:4000/archive/jekyll/update/2024/12/06/CF-991</id><content type="html" xml:base="http://localhost:4000/archive/jekyll/update/2024/12/06/CF-991.html"><![CDATA[<p>CodeForces Round 991 Division 3</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>6657 Fan Club</title>
+    <description>A Personal Website Powered By Jekyll and Centrarium.
+</description>
+    <link>http:/localhost:4000</link>
+    <atom:link href="http:/localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 07 Dec 2024 20:31:12 -0500</pubDate>
+    <lastBuildDate>Sat, 07 Dec 2024 20:31:12 -0500</lastBuildDate>
+    <generator>Jekyll v3.10.0</generator>
+    
+      <item>
+        <title>Personal Website Rebuild</title>
+        <description>&lt;p&gt;The website has been rebuilt using the new theme Centrasium!&lt;/p&gt;
 
-<p>Problem A</p>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">solve</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span> <span class="o">&gt;&gt;</span> <span class="n">m</span><span class="p">;</span>
-    <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">res</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">s</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
-    <span class="kt">int</span> <span class="n">len</span><span class="p">[</span><span class="n">n</span><span class="p">],</span> <span class="n">pref</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-        <span class="n">len</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">length</span><span class="p">();</span>
-    <span class="p">}</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">len</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">m</span><span class="p">)</span> <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-        <span class="k">else</span> <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="mi">0</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">pref</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">len</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">m</span><span class="p">)</span> <span class="n">res</span><span class="o">++</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">pref</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">pref</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">len</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">m</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">res</span><span class="o">++</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="k">break</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">res</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
+</description>
+        <pubDate>Sat, 07 Dec 2024 20:19:55 -0500</pubDate>
+        <link>http:/localhost:4000/blogs/2024/12/07/personal-website.html</link>
+        <guid isPermaLink="true">http:/localhost:4000/blogs/2024/12/07/personal-website.html</guid>
+        
+        
+        
+        <category>Blogs</category>
+        
+      </item>
+    
+      <item>
+        <title>CodeForces Round 991 (Div 3)</title>
+        <description>&lt;p&gt;CodeForces Round 991 Division 3&lt;/p&gt;
 
-<p>Problem B</p>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">solve</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">ll</span> <span class="n">a</span><span class="p">[</span><span class="mi">200020</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
-    <span class="n">ll</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">avg</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-        <span class="n">sum</span> <span class="o">+=</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-    <span class="p">}</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">sum</span> <span class="o">%</span> <span class="n">n</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"NO"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span><span class="p">;</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="n">avg</span> <span class="o">=</span> <span class="n">sum</span> <span class="o">/</span> <span class="n">n</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">avg</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">a</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">-=</span> <span class="p">(</span><span class="n">avg</span> <span class="o">-</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]);</span>
-            <span class="n">a</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">avg</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="n">a</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">avg</span><span class="p">);</span>
-            <span class="n">a</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">avg</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
+</description>
+        <pubDate>Fri, 06 Dec 2024 19:27:06 -0500</pubDate>
+        <link>http:/localhost:4000/blogs/2024/12/06/CF-991.html</link>
+        <guid isPermaLink="true">http:/localhost:4000/blogs/2024/12/06/CF-991.html</guid>
+        
+        
+        
+        <category>Blogs</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to My Blog!</title>
+        <description>&lt;p&gt;Welcome to my personal blog!&lt;/p&gt;
 
-    <span class="c1">// for (int i = 1; i &lt;= n; i++) {</span>
-    <span class="c1">//     std::cout &lt;&lt; a[i] &lt;&lt; " ";</span>
-    <span class="c1">// }</span>
-    <span class="c1">// std::cout &lt;&lt; std::endl;</span>
-
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">avg</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"NO"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-            <span class="k">return</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"YES"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>Problem C</p>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">solve</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">s</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="n">res</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">rem</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">two</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">three</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">s</span><span class="p">.</span><span class="n">length</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kt">int</span> <span class="n">dgt</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="sc">'0'</span><span class="p">;</span>
-        <span class="n">sum</span> <span class="o">+=</span> <span class="n">dgt</span><span class="p">;</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">dgt</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="n">two</span><span class="o">++</span><span class="p">;</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">dgt</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span> <span class="n">three</span><span class="o">++</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="n">rem</span> <span class="o">=</span> <span class="p">(</span><span class="mi">9</span> <span class="o">-</span> <span class="n">sum</span> <span class="o">%</span> <span class="mi">9</span><span class="p">)</span> <span class="o">%</span> <span class="mi">9</span><span class="p">;</span> 
-
-    <span class="k">if</span> <span class="p">(</span><span class="n">rem</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"YES"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span> 
-        <span class="k">return</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">a</span> <span class="o">&lt;=</span> <span class="n">two</span><span class="p">;</span> <span class="n">a</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">b</span> <span class="o">&lt;=</span> <span class="n">three</span><span class="p">;</span> <span class="n">b</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-            <span class="kt">int</span> <span class="n">total_increase</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">6</span> <span class="o">*</span> <span class="n">b</span><span class="p">;</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">total_increase</span> <span class="o">%</span> <span class="mi">9</span> <span class="o">==</span> <span class="n">rem</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">res</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
-                <span class="k">break</span><span class="p">;</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">res</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="c1">// rem = sum % 9;</span>
-    <span class="c1">// if (rem == 0) res = true;</span>
-    <span class="c1">// rem = 9 - rem;</span>
-    <span class="c1">// if (rem == 0) {</span>
-    <span class="c1">//     res = true;</span>
-    <span class="c1">// } else if (rem == 1) { // 1, 10, 19, 28</span>
-    <span class="c1">//     if (two &gt;= 5) res = true;</span>
-    <span class="c1">//     if (two &gt;= 2 &amp;&amp; three &gt;= 1) res = true;</span>
-    <span class="c1">// } else if (rem == 2) { // 2, 11, 20, 29, 38, 47, 56</span>
-    <span class="c1">//     if (two &gt;= 1) res = true;</span>
-    <span class="c1">// } else if (rem == 3) { // 3, 12, 21</span>
-    <span class="c1">//     if (two &gt;= 6) res = true;</span>
-    <span class="c1">//     if (three &gt;= 2) res = true;</span>
-    <span class="c1">//     if (two &gt;= 3 &amp;&amp; three &gt;= 1) res = true;</span>
-    <span class="c1">// } else if (rem == 4) { // 4, 13, 22</span>
-    <span class="c1">//     if (two &gt;= 2) res = true;</span>
-    <span class="c1">// } else if (rem == 5) { // 5, 14, 23, 32</span>
-    <span class="c1">//     if (two &gt;= 4 &amp;&amp; three &gt;= 1) res = true;</span>
-    <span class="c1">//     if (two &gt;= 1 &amp;&amp; three &gt;= 2) res = true;</span>
-    <span class="c1">// } else if (rem == 6) { // 6, 15, 24, 33</span>
-    <span class="c1">//     if (three &gt;= 1) res = true;</span>
-    <span class="c1">//     if (two &gt;= 3) res = true;</span>
-    <span class="c1">// } else if (rem == 7) { // 7, 16, 25, 34, 43</span>
-    <span class="c1">//     if (two &gt;= 2 &amp;&amp; three &gt;= 2) res = true;</span>
-    <span class="c1">//     if (two &gt;= 5 &amp;&amp; three &gt;= 1) res = true;</span>
-    <span class="c1">// } else if (rem == 8) { // 8, 17, 26</span>
-    <span class="c1">//     if (two &gt;= 4) res = true;</span>
-    <span class="c1">//     if (two &gt;= 1 &amp;&amp; three &gt;= 1) res = true;</span>
-    <span class="c1">// } </span>
-
-    <span class="k">if</span> <span class="p">(</span><span class="n">res</span> <span class="o">==</span> <span class="nb">true</span><span class="p">)</span> <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"YES"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-    <span class="k">else</span> <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"NO"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>Problem D</p>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">solve</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">s</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">a</span><span class="p">[</span><span class="mi">200020</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">s</span><span class="p">.</span><span class="n">length</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="sc">'0'</span><span class="p">;</span>
-        <span class="c1">// for (int i = 1; i &lt;= s.length(); i++) std::cout &lt;&lt; a[i];</span>
-        <span class="c1">// std::cout &lt;&lt; std::endl;</span>
-    <span class="p">}</span>
-
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">s</span><span class="p">.</span><span class="n">length</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
-        <span class="k">while</span> <span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">&gt;</span> <span class="n">a</span><span class="p">[</span><span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="n">j</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-            <span class="kt">int</span> <span class="n">tmp</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">];</span>
-            <span class="n">a</span><span class="p">[</span><span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-            <span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span><span class="p">;</span>
-            <span class="n">j</span><span class="o">--</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="c1">// for (int i = 1; i &lt;= s.length(); i++) std::cout &lt;&lt; a[i];</span>
-        <span class="c1">// std::cout &lt;&lt; std::endl;</span>
-    <span class="p">}</span>
-
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">s</span><span class="p">.</span><span class="n">length</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>]]></content><author><name></name></author><category term="archive" /><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[CodeForces Round 991 Division 3]]></summary></entry><entry><title type="html">Welcome to My Blog!</title><link href="http://localhost:4000/archive/jekyll/update/2024/12/03/first-blog.html" rel="alternate" type="text/html" title="Welcome to My Blog!" /><published>2024-12-03T13:44:05-05:00</published><updated>2024-12-03T13:44:05-05:00</updated><id>http://localhost:4000/archive/jekyll/update/2024/12/03/first-blog</id><content type="html" xml:base="http://localhost:4000/archive/jekyll/update/2024/12/03/first-blog.html"><![CDATA[<p>Welcome to my personal blog!</p>
-
-<p>You can find my personal website here <a href="https://o-v-o.xyz/">personal-website</a>!</p>
-
-<p>Check out my github for more information <a href="https://github.com/onetrue-6657/">personal-gh</a>!</p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
-</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>]]></content><author><name></name></author><category term="archive" /><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Welcome to my personal blog!]]></summary></entry></feed>
+</description>
+        <pubDate>Tue, 03 Dec 2024 13:44:05 -0500</pubDate>
+        <link>http:/localhost:4000/blogs/2024/12/03/first-blog.html</link>
+        <guid isPermaLink="true">http:/localhost:4000/blogs/2024/12/03/first-blog.html</guid>
+        
+        
+        
+        <category>Blogs</category>
+        
+      </item>
+    
+  </channel>
+</rss>

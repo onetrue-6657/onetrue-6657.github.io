@@ -228,7 +228,7 @@ Please follow these steps:
 
 ## License
 
-MIT. See [LICENSE.MD](https://github.com/onetrue-6657/onetrue-6657.github.io/LICENSE.md).
+MIT. See [LICENSE.MD](https://github.com/onetrue-6657/onetrue-6657.github.io/blob/main/LICENSE.md).
 
 <!-- [bencentra]: http://bencentra.com
 [bourbon]: http://bourbon.io/
