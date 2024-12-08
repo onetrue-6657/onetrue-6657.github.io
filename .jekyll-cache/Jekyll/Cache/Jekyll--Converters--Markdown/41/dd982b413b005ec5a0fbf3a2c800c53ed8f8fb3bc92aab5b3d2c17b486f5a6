@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-07T19:21:50-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Centrarium</title><subtitle>A simple yet classy theme for your Jekyll website or blog.
-</subtitle><entry><title type="html">CodeForces Round 991 (Div 3)</title><link href="http://localhost:4000/archive/jekyll/update/2024/12/06/CF-991.html" rel="alternate" type="text/html" title="CodeForces Round 991 (Div 3)" /><published>2024-12-06T19:27:06-05:00</published><updated>2024-12-06T19:27:06-05:00</updated><id>http://localhost:4000/archive/jekyll/update/2024/12/06/CF-991</id><content type="html" xml:base="http://localhost:4000/archive/jekyll/update/2024/12/06/CF-991.html"><![CDATA[<p>CodeForces Round 991 Division 3</p>
+I"Þ^<p>CodeForces Round 991 Division 3</p>
 
 <p>Problem A</p>
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">solve</span><span class="p">()</span> <span class="p">{</span>
@@ -159,15 +158,5 @@
     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">s</span><span class="p">.</span><span class="n">length</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
     <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div></div>]]></content><author><name></name></author><category term="archive" /><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[CodeForces Round 991 Division 3]]></summary></entry><entry><title type="html">Welcome to My Blog!</title><link href="http://localhost:4000/archive/jekyll/update/2024/12/03/first-blog.html" rel="alternate" type="text/html" title="Welcome to My Blog!" /><published>2024-12-03T13:44:05-05:00</published><updated>2024-12-03T13:44:05-05:00</updated><id>http://localhost:4000/archive/jekyll/update/2024/12/03/first-blog</id><content type="html" xml:base="http://localhost:4000/archive/jekyll/update/2024/12/03/first-blog.html"><![CDATA[<p>Welcome to my personal blog!</p>
-
-<p>You can find my personal website here <a href="https://o-v-o.xyz/">personal-website</a>!</p>
-
-<p>Check out my github for more information <a href="https://github.com/onetrue-6657/">personal-gh</a>!</p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
-</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>]]></content><author><name></name></author><category term="archive" /><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Welcome to my personal blog!]]></summary></entry></feed>
+</code></pre></div></div>
+:ET
