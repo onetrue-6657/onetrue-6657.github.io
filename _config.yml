@@ -19,7 +19,7 @@ description: >
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://o-v-o.xyz/" # the base hostname & protocol for your site
+url: "https://onetrue-6657.github.io/" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
 
@@ -181,11 +181,11 @@ social:
     desc: Share to Reddit
     share: true
 
-  - name: "Hacker News"
-    icon: hacker-news
+  - name: ""
+    icon: ""
     username: ""
     url: ""
-    desc: Share to Hacker News
+    desc: ""
     share: false
 
   # - name: "Xiaohongshu"
