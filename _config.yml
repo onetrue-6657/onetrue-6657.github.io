@@ -24,9 +24,13 @@ cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
 
 # Build settings
+highlighter: none
 markdown: kramdown
+kramdown:
+  syntax_highlighter: null
+  input: GFM
 inter_post_navigation: false
-highlightjs_theme: "monokai_sublime"
+highlightjs_theme: "monokai-sublime"
 
 # Pagination Settings
 # https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration

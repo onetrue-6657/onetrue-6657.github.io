@@ -6,6 +6,5 @@ categories: Blogs
 ---
 The website has been rebuilt using the new theme Centrasium!
 
-```cpp
 Why are my codes not highlighted????
-```
+
