@@ -6,9 +6,24 @@
 </description>
     <link>http:/localhost:4000</link>
     <atom:link href="http:/localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 Dec 2024 19:49:56 -0500</pubDate>
-    <lastBuildDate>Tue, 10 Dec 2024 19:49:56 -0500</lastBuildDate>
+    <pubDate>Wed, 11 Dec 2024 18:29:39 -0500</pubDate>
+    <lastBuildDate>Wed, 11 Dec 2024 18:29:39 -0500</lastBuildDate>
     <generator>Jekyll v3.10.0</generator>
+    
+      <item>
+        <title>Personal Website Update Log</title>
+        <description>&lt;p&gt;The bug of code syntax not highlighting as expected has been fixed.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 11 Dec 2024 18:28:22 -0500</pubDate>
+        <link>http:/localhost:4000/blogs/2024/12/11/Dec11.html</link>
+        <guid isPermaLink="true">http:/localhost:4000/blogs/2024/12/11/Dec11.html</guid>
+        
+        
+        
+        <category>Blogs</category>
+        
+      </item>
     
       <item>
         <title>Personal Website Rebuild</title>
@@ -16,8 +31,8 @@
 
 </description>
         <pubDate>Sat, 07 Dec 2024 20:19:55 -0500</pubDate>
-        <link>http:/localhost:4000/blogs/2024/12/07/personal-website.html</link>
-        <guid isPermaLink="true">http:/localhost:4000/blogs/2024/12/07/personal-website.html</guid>
+        <link>http:/localhost:4000/blogs/2024/12/07/personal-website-copy.html</link>
+        <guid isPermaLink="true">http:/localhost:4000/blogs/2024/12/07/personal-website-copy.html</guid>
         
         
         
@@ -52,25 +67,6 @@
         
         
         <category>Blogs</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 18 Apr 2015 15:25:52 -0400</pubDate>
-        <link>http:/localhost:4000/jekyll/2015/04/18/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http:/localhost:4000/jekyll/2015/04/18/welcome-to-jekyll.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>welcome</category>
-        
-        
-        <category>Jekyll</category>
         
       </item>
     
