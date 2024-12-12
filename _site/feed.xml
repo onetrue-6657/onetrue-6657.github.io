@@ -6,12 +6,28 @@
 </description>
     <link>http:/localhost:4000</link>
     <atom:link href="http:/localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 11 Dec 2024 18:29:39 -0500</pubDate>
-    <lastBuildDate>Wed, 11 Dec 2024 18:29:39 -0500</lastBuildDate>
+    <pubDate>Thu, 12 Dec 2024 16:14:23 -0500</pubDate>
+    <lastBuildDate>Thu, 12 Dec 2024 16:14:23 -0500</lastBuildDate>
     <generator>Jekyll v3.10.0</generator>
     
       <item>
-        <title>Personal Website Update Log</title>
+        <title>Semester Conclusion 2</title>
+        <description>&lt;p&gt;```cpp
+#include &amp;lt;bits/stdc++.h&amp;gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 12 Dec 2024 16:12:22 -0500</pubDate>
+        <link>http:/localhost:4000/blogs/2024/12/12/Dec12.html</link>
+        <guid isPermaLink="true">http:/localhost:4000/blogs/2024/12/12/Dec12.html</guid>
+        
+        
+        
+        <category>Blogs</category>
+        
+      </item>
+    
+      <item>
+        <title>Semester Conclusion 1</title>
         <description>&lt;p&gt;The bug of code syntax not highlighting as expected has been fixed.&lt;/p&gt;
 
 </description>
