@@ -6,53 +6,24 @@
 </description>
     <link>http:/localhost:4000</link>
     <atom:link href="http:/localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 12 Dec 2024 16:14:23 -0500</pubDate>
-    <lastBuildDate>Thu, 12 Dec 2024 16:14:23 -0500</lastBuildDate>
+    <pubDate>Sun, 02 Feb 2025 20:26:48 -0500</pubDate>
+    <lastBuildDate>Sun, 02 Feb 2025 20:26:48 -0500</lastBuildDate>
     <generator>Jekyll v3.10.0</generator>
     
       <item>
-        <title>Semester Conclusion 2</title>
-        <description>&lt;p&gt;```cpp
-#include &amp;lt;bits/stdc++.h&amp;gt;&lt;/p&gt;
+        <title>GENUARY2025</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://genuary.art/&quot;&gt;GENUARY&lt;/a&gt; is an artificially generated month of time where we build code that makes beautiful things. It’s happening during the month of January 2025. You can use any language, framework or medium.&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 12 Dec 2024 16:12:22 -0500</pubDate>
-        <link>http:/localhost:4000/blogs/2024/12/12/Dec12.html</link>
-        <guid isPermaLink="true">http:/localhost:4000/blogs/2024/12/12/Dec12.html</guid>
+        <pubDate>Sun, 02 Feb 2025 20:07:35 -0500</pubDate>
+        <link>http:/localhost:4000/projects/english/2025/02/02/Feb02.html</link>
+        <guid isPermaLink="true">http:/localhost:4000/projects/english/2025/02/02/Feb02.html</guid>
         
         
         
-        <category>Blogs</category>
+        <category>Projects</category>
         
-      </item>
-    
-      <item>
-        <title>Semester Conclusion 1</title>
-        <description>&lt;p&gt;The bug of code syntax not highlighting as expected has been fixed.&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 11 Dec 2024 18:28:22 -0500</pubDate>
-        <link>http:/localhost:4000/blogs/2024/12/11/Dec11.html</link>
-        <guid isPermaLink="true">http:/localhost:4000/blogs/2024/12/11/Dec11.html</guid>
-        
-        
-        
-        <category>Blogs</category>
-        
-      </item>
-    
-      <item>
-        <title>Personal Website Rebuild</title>
-        <description>&lt;p&gt;The website has been rebuilt using the new theme Centrasium!&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 07 Dec 2024 20:19:55 -0500</pubDate>
-        <link>http:/localhost:4000/blogs/2024/12/07/personal-website-copy.html</link>
-        <guid isPermaLink="true">http:/localhost:4000/blogs/2024/12/07/personal-website-copy.html</guid>
-        
-        
-        
-        <category>Blogs</category>
+        <category>English</category>
         
       </item>
     
@@ -62,12 +33,14 @@
 
 </description>
         <pubDate>Fri, 06 Dec 2024 19:27:06 -0500</pubDate>
-        <link>http:/localhost:4000/blogs/2024/12/06/CF-991.html</link>
-        <guid isPermaLink="true">http:/localhost:4000/blogs/2024/12/06/CF-991.html</guid>
+        <link>http:/localhost:4000/competitive-programming/english/2024/12/06/CF-991.html</link>
+        <guid isPermaLink="true">http:/localhost:4000/competitive-programming/english/2024/12/06/CF-991.html</guid>
         
         
         
-        <category>Blogs</category>
+        <category>Competitive-Programming</category>
+        
+        <category>English</category>
         
       </item>
     
@@ -77,12 +50,14 @@
 
 </description>
         <pubDate>Tue, 03 Dec 2024 13:44:05 -0500</pubDate>
-        <link>http:/localhost:4000/blogs/2024/12/03/first-blog.html</link>
-        <guid isPermaLink="true">http:/localhost:4000/blogs/2024/12/03/first-blog.html</guid>
+        <link>http:/localhost:4000/website/english/2024/12/03/first-blog.html</link>
+        <guid isPermaLink="true">http:/localhost:4000/website/english/2024/12/03/first-blog.html</guid>
         
         
         
-        <category>Blogs</category>
+        <category>Website</category>
+        
+        <category>English</category>
         
       </item>
     

@@ -4,18 +4,24 @@ title: About
 permalink: /about/
 main_nav: true
 ---
-Welcome to my personal website blog!
+```txt
+o-v-o.xyz
 
-I am currently a computer and information science student at the Ohio State University. I live in Columbus, OH.
-I am from Suzhou, China, and I come from Suzhou High School.
+中文/English
 
-```cpp
-My favorite language is C++, while I am also familiar with Java, Python, Javascript.
+douyu.com/6657
+No.1 6657 Fan in Ohio ✺ω✺
+
+DPtsd competitive programmer OvO
+Beginner full-stack developer ´・ω・`
+Newbie Gen Art Creator =w=
+
+C++/Java/Python/JavaScript/...
+
 ```
 
-Feel free to contact me at any time: [Discord]
+Links about me: [Linktree](https://linktr.ee/ohiowjq)
 
-Check the source code of this website, powered by Ruby and Jekyll! [Jekyll Source Code]
+Personal Website: [o-v-o.xyz](o-v-o.xyz)
 
-[Discord]: https://discord.gg/jBWjw5Hzkr/
-[Jekyll Source Code]: https://github.com/onetrue-6657/onetrue-6657.github.io/
+Check the source code of this website, powered by Ruby and Jekyll! [Jekyll Source Code](https://github.com/onetrue-6657/onetrue-6657.github.io/)

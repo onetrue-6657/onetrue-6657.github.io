@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to My Blog!"
 date:   2024-12-03 13:44:05 -0500
-categories: Blogs
+categories: Website English
 ---
 Welcome to my personal blog!
 

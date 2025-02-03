@@ -11,7 +11,7 @@ exclude:
 # Site settings
 title: 6657 Fan Club
 subtitle: "Personal Website Powered By Jekyll and Centrarium"
-email: o-v-o-6657@outlook.com
+email: tiansuohaoer1145141919810@outlook.com
 name: o-v-o
 description: >
   A Personal Website Powered By Jekyll and Centrarium.
@@ -58,11 +58,20 @@ jekyll-archives:
 
 # Category descriptions (for archive pages)
 descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
+  - cat: Website
+    desc: "Everything about this website."
 
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+  - cat: English
+    desc: "Every blog written in English."
+
+  - cat: Chinese
+    desc: "用简体中文写的博客！."
+
+  - cat: Competitive-programming
+    desc: "Competitive programming, OI and ICPC, orz."
+
+  - cat: Projects
+    desc: "Projects I've done."
 
 # Social icons and sharing options
 #
